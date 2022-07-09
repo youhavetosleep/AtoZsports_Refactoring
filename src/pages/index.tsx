@@ -1,9 +1,13 @@
-import type { NextPage } from 'next'
+import MainView from "@views/MainView";
+
+import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <h1>atozsports</h1>
-  )
-}
+    <>
+      <MainView />
+    </>
+  );
+};
 
-export default Home
+export default Home;
