@@ -10,12 +10,12 @@ import { atom } from "recoil";
 
 // 전역에서 해당 state 를 useRecoilValue 로 불러다 사용하면 됩니다.
 
-export const TestState = atom({
-  key: 'test',
-  default: '',
+export const TestState = atom<string | undefined>({
+  key: 'test',  // 해당 상태만의 유니크한 값이 들어가야 합니다.
+  default: '테스트 state 입니다',  // 해당 값의 디폴트값이 들어갑니다.
 });
 
-export const TestState2 = atom({
+export const TestState2 = atom<string | undefined>({
   key: 'test2',
   default: '',
 });
