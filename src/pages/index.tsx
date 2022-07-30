@@ -1,11 +1,14 @@
 import MainView from "@views/MainView";
 
 import type { NextPage } from "next";
+import { RecoilRoot } from "recoil";
 
 const Home: NextPage = () => {
   return (
     <>
-      <MainView />
+      <RecoilRoot>
+        <MainView />
+      </RecoilRoot>
     </>
   );
 };
